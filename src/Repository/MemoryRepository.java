@@ -18,6 +18,7 @@ public class MemoryRepository<T extends Entity> extends AbstractRepository<T> {
         for (T it : this.data) {
             if (it.get_id() == id) {
                 this.data.remove(it);
+                break;
             }
         }
     }

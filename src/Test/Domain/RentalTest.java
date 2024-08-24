@@ -33,13 +33,20 @@ class RentalTest {
 
     @Test
     void set_car() {
+        c.set_model("test");
+        r.set_car(c);
+        assertEquals(c, r.get_car());
     }
 
     @Test
     void set_start_date() {
+        r.set_start_date("test");
+        assertEquals("test", r.get_start_date());
     }
 
     @Test
     void set_end_date() {
+        r.set_end_date("test");
+        assertEquals("test", r.get_end_date());
     }
 }
